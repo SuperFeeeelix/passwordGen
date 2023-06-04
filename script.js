@@ -1,12 +1,11 @@
 //Assignment Code
-var generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
+// let passwordText = document.getElementById('password').innerHTML;
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  passwordText.value = generatePassword();
 }
 
  
@@ -23,10 +22,10 @@ function generatePassword() {
   }
 
   // Variables to confirm character types to include in the password
-  var includeLower = confirm("Click to confirm including lowercase letters");
-  var includeUpper = confirm("Click to confirm including uppercase letters");
-  var includeSymbol = confirm("Click to confirm including symbols");
-  var includeNumber = confirm("Click to confirm including numbers");
+  let includeLower = confirm("Click to confirm including lowercase letters");
+  let includeUpper = confirm("Click to confirm including uppercase letters");
+  let includeSymbol = confirm("Click to confirm including symbols");
+  let includeNumber = confirm("Click to confirm including numbers");
 
   // If statement when all confirmations are false, prompt generates an alert message telling the user to confirm at least one character type
   if (includeLower === false && includeUpper === false && includeSymbol === false && includeNumber === false) {
@@ -77,14 +76,16 @@ function generatePassword() {
   }
 
   // Loop through the selected character types and generate password characters
-  var password = ""; // Added this line to initialize an empty string for the password
-  for (var i = 0; i < charactersLength; i++) {
-    var randomCharType = selectedCharTypes[Math.floor(Math.random() * selectedCharTypes.length)];
+  let password = ""; //  this line to initialize an empty string for the password
+  for (let i = 0; i < charactersLength; i++) {
+    let randomCharType = selectedCharTypes[Math.floor(Math.random() * selectedCharTypes.length)];
     password += randomFunc[randomCharType]();
   }
 
   // Output the generated password
   console.log("Generated Password: " + password);
-  return password; // Updated this line to return the generated password
+  
+  //retruns the value to the HTML 
+  document.getElementById("password").innerHTML = password;
 
 }
