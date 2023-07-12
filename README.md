@@ -1,20 +1,34 @@
-# passwordGen
-password Generator challenge 
+# Password Generator
+  by Oswaldo O felix Thompson
+  ![Github license](https://img.shields.io/badge/license-none-blue.svg)
+  ## Table Of Contents
+  * [Description](#description)
+  * [Video](#video)
+  * [Screen-Shot](#screen-shot)
+  * [Usage](#usage)
+  * [Contact-Me](#contact-me)
+  * [License](#license)
+  https://opensource.org/licenses/MIT
+  ## Description
+  Generate random passwords with various combinations of characters.
+  Specify the length of the password.
+  Include uppercase letters, lowercase letters, numbers, and special characters in the generated passwords.
+  Customize the number of passwords to generate
+  ## Video
 
-## Details 
+  ## Screen-Shot
+  
+  ## Usage
+  HTML
+  CSS
+  JavaScript
+  ## Contact-Me
+  * Name - Oswaldo O felix Thompson
+  * Email - oswaldo_felix@yahoo.com
+  * Github - [superfeeeelix](https://github.com/superfeeeelix/)
 
-in this challenge I performed with the starter code to make the java create a password.
-
-## sources
-
-https://junilearning.com/blog/coding-projects/make-a-java-random-password-generator/
-
-https://www.tutorialspoint.com/Generating-password-in-Java
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
-
-https://www.w3schools.com/jsref/met_document_queryselector.asp
-
-https://www.youtube.com/watch?v=duNmhKgtcsI
-
-https://www.youtube.com/watch?v=niay2OKGmlM&t=6s
+  ## Contact-Me
+  Please send your questions [here](malito:oswaldo_felix@yahoo.com)
+  ## License
+      
+      Licensed under the none license
