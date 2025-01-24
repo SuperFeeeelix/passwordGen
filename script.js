@@ -17,8 +17,8 @@ function writePassword() {
 function generatePassword() {
   console.log("Hey! You clicked the button!");
   var charactersLength = parseInt(prompt("How many characters would you like your password to contain?"));
-  if (charactersLength < 8 || charactersLength > 128) {
-    return alert("Your password must be between 8 and 128 characters.");
+  if (charactersLength < 8 || charactersLength > 20) {
+    return alert("Your password must be between 8 and 20 characters.");
   }
 
   // Variables to confirm character types to include in the password
